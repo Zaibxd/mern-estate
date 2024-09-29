@@ -9,7 +9,7 @@
 
 # Install tailwind (Go to official tailwind css site and paste the given commands inside client folder)
 
-# Adding project to GitHub repository
+# Adding project to GitHub repository (do this in root not client side of server side)
 1)git init (Initialize)
 2)git add . / git add all (Adding all the files inside our application)
 3)git commit -m "your message"
@@ -59,3 +59,12 @@
 
 # To run server with nodemon now
 1)npm run dev
+
+# Connect to database
+1)Install mongoose inside root folder 'mern-estate' ->>npm i mongoose
+2)create cluster on mongodb and after that go to 'connect->driver->copy link' 
+3)paste that link inside api/index.js -> mongoose.connect.
+
+# Instll dotenv in root to ensure url stays hidden
+1)npm i dotenv
+2)env should not be pushed to git, so write it at the end of gitignore before commiting.
