@@ -21,3 +21,13 @@
 
 # Install react-router-dom inside client side
 1)npm i react-router-dom
+
+# Pushing code in repo from vs code
+1)Open source control
+2)click the '+' icon on save changes bar on top
+3)After that click commit or from dropdown select commit and push.
+
+# Creating Header section
+
+# Install react icons to use 
+1)npm i react-icons (stay inside client folder)
