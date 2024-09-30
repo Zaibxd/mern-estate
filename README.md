@@ -68,3 +68,5 @@
 # Instll dotenv in root to ensure url stays hidden
 1)npm i dotenv
 2)env should not be pushed to git, so write it at the end of gitignore before commiting.
+
+# creating user model (using mongoose)
