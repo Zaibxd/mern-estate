@@ -70,3 +70,8 @@
 2)env should not be pushed to git, so write it at the end of gitignore before commiting.
 
 # creating user model (using mongoose)
+
+# creating a test API route
+
+
+
