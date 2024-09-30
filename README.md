@@ -73,5 +73,7 @@
 
 # creating a test API route
 
+# creating sign-up API route
 
-
+# Install bcryptjs for hashing password
+1)npm i bcryptjs
