@@ -24,3 +24,15 @@ app.listen(3000, () => {
 //"req" is data we get from client side, "res" is the data we send back from server side.
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
+
+//Creating the middleware to handle possible errors
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || "Internal Server Error";
+
+  return res.status(statusCode).json({
+    success: false,
+    statusCode,
+    message,
+  });
+});

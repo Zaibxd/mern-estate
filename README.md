@@ -77,3 +77,5 @@
 
 # Install bcryptjs for hashing password
 1)npm i bcryptjs
+
+# create a middleware and function for handling the possible error 
