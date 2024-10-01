@@ -88,3 +88,5 @@
 
 # Json web token for authenticating the user 
 1)npm i jsonwebtoken (In root directory)
+
+# complete sign in page functionality 

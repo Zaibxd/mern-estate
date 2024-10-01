@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function () {
+export default function SignUp() {
   // useState hook to manage form data. 'formData' stores input values,
   // and 'setFormData' is the function to update the state.
   const [formData, setFormData] = useState({});
@@ -81,7 +81,7 @@ export default function () {
           disabled={loading}
           className="text-white p-3 bg-slate-700 rounded-lg uppercase hover:bg-slate-800 transition "
         >
-          {loading ? "Loading..." : "Signup"}
+          {loading ? "Loading..." : "Sign Up"}
         </button>
       </form>
 
