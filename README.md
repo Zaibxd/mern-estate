@@ -83,3 +83,8 @@
 # complete sign up and page ui
 
 # complete sign up page functionality 
+
+# create sign in API route 
+
+# Json web token for authenticating the user 
+1)npm i jsonwebtoken (In root directory)
