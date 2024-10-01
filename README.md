@@ -81,3 +81,5 @@
 # create a middleware and function for handling the possible error 
 
 # complete sign up and page ui
+
+# complete sign up page functionality 
