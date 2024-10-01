@@ -79,3 +79,5 @@
 1)npm i bcryptjs
 
 # create a middleware and function for handling the possible error 
+
+# complete sign up and page ui
