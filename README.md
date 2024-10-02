@@ -100,3 +100,9 @@
 
 # Install redux persist
 1)npm i redux-persist
+
+# Add google OAuth functionality 
+1)Register on google firebase and create a project 
+
+# Install firebase
+1)npm i firebase (On client side)
