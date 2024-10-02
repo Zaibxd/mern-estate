@@ -90,3 +90,6 @@
 1)npm i jsonwebtoken (In root directory)
 
 # complete sign in page functionality 
+
+# Add Redux toolkit
+1) npm install @reduxjs/toolkit react-redux (Install on client side not root)
