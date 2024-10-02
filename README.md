@@ -108,3 +108,5 @@
 1)npm i firebase (On client side)
 
 # update the header and make the profile page private
+
+# complete profile page UI
