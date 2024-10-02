@@ -93,3 +93,10 @@
 
 # Add Redux toolkit
 1) npm install @reduxjs/toolkit react-redux (Install on client side not root)
+
+# Installed redux toolkit extension on chrome
+
+# Add redux persist (Helps to store userData inside local storage)
+
+# Install redux persist
+1)npm i redux-persist
