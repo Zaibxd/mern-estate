@@ -110,3 +110,5 @@
 # update the header and make the profile page private
 
 # complete profile page UI
+
+# Image upload functionality
