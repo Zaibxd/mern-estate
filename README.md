@@ -120,4 +120,6 @@
 2)Initialize it in index.js 
 
 # complete update user functionality 
+
+# Add delete user functionality
  
