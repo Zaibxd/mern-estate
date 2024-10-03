@@ -112,3 +112,9 @@
 # complete profile page UI
 
 # Image upload functionality
+
+# Create update user API route 
+
+# Install cookie-parser (In root directory)
+1)npm i cookie-parser
+2)Initialize it in index.js 
