@@ -118,3 +118,6 @@
 # Install cookie-parser (In root directory)
 1)npm i cookie-parser
 2)Initialize it in index.js 
+
+# complete update user functionality 
+ 
