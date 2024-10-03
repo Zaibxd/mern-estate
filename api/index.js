@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import userRouter from "./routes/user.route.js";
 import authRouter from "./routes/auth.route.js";
+import listingRouter from "./routes/listing.route.js";
 import cookieParser from "cookie-parser";
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.listen(3000, () => {
 //"req" is data we get from client side, "res" is the data we send back from server side.
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
+app.use("/api/listing", listingRouter);
 
 //Creating the middleware to handle possible errors
 app.use((err, req, res, next) => {
