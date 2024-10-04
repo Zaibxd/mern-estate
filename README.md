@@ -133,4 +133,6 @@
 
 # complete create listing page functionality 
 
-# create get user listings  API routes
+# create get user listings API routes
+
+# complete show user listings functionality
