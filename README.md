@@ -132,3 +132,5 @@
 # complete upload listing images functionality
 
 # complete create listing page functionality 
+
+# create get user listings  API routes
