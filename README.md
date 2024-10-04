@@ -128,3 +128,5 @@
 # add create listing API route
 
 # complete create listing page UI
+
+# complete upload listing images functionality
