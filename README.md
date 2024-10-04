@@ -130,3 +130,5 @@
 # complete create listing page UI
 
 # complete upload listing images functionality
+
+# complete create listing page functionality 
