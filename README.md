@@ -136,3 +136,5 @@
 # create get user listings API routes
 
 # complete show user listings functionality
+
+# complete delete user listings functionality
