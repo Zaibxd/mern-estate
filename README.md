@@ -147,3 +147,5 @@
 1)npm i swiper
 
 # complete listing page 
+
+# add contact landlord functionality to the listing page
