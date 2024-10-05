@@ -142,3 +142,6 @@
 # create update listing API route
 
 # complete update listing functionality
+
+# install swiper (client side)
+1)npm i swiper
