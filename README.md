@@ -145,3 +145,5 @@
 
 # install swiper (client side)
 1)npm i swiper
+
+# complete listing page 
