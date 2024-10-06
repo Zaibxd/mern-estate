@@ -164,3 +164,5 @@
 1)npm install -D @tailwindcss/line-clamp
 
 # add show more listing functionality
+
+# complete home page
