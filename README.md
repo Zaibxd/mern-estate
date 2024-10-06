@@ -162,3 +162,5 @@
 
 # install tailwind css line clamp (In client side)
 1)npm install -D @tailwindcss/line-clamp
+
+# add show more listing functionality
