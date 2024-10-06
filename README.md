@@ -157,3 +157,8 @@
 # create search page UI
 
 # add onChange & onSubmit functionality to the search page
+
+# create the listing item component and show listings 
+
+# install tailwind css line clamp (In client side)
+1)npm install -D @tailwindcss/line-clamp
