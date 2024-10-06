@@ -155,3 +155,5 @@
 # complete header search form functionality 
 
 # create search page UI
+
+# add onChange & onSubmit functionality to the search page
