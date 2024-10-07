@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import {
   getDownloadURL,
   getStorage,
@@ -19,12 +19,11 @@ import {
   signOutUserSuccess,
   signOutUserFailure,
 } from "../redux/user/userSlice";
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 
 export default function Profile() {
   const { currentUser, loading, error } = useSelector((state) => state.user);
   const fileRef = useRef(null);
+  const listingsRef = useRef(null);
   const [file, setFile] = useState(undefined);
   const [filePerc, setFilePerc] = useState(0);
   const [fileUploadError, setFileUploadError] = useState(false);
@@ -133,11 +132,18 @@ export default function Profile() {
       setShowListingsError(false);
       const res = await fetch(`/api/user/listings/${currentUser._id}`);
       const data = await res.json();
+
       if (data.success === false) {
         setShowListingsError(true);
         return;
       }
+
       setUserListings(data);
+      setTimeout(() => {
+        if (listingsRef.current) {
+          listingsRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
     } catch (error) {
       setShowListingsError(true);
     }
@@ -163,7 +169,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="p-3 max-w-sm mx-auto">
+    <div className="p-5 max-w-md mx-auto bg-slate-200 mt-5 rounded-lg">
       <h1 className="text-3xl font-semibold text-center my-5">Profile</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
@@ -249,27 +255,33 @@ export default function Profile() {
       <p className="mt-5 text-green-700 text-center">
         {updateSuccess ? "User is updated successfully" : ""}
       </p>
-      <button onClick={handleShowListings} className="text-green-700 w-full">
+      <button
+        onClick={handleShowListings}
+        className="text-white w-full p-3 rounded-lg bg-slate-700 hover:bg-slate-900 uppercase  disabled:opacity-80"
+      >
         Show Listings
       </button>
       <p className="text-red-700 mt-5 text-sm">
         {showListingsError ? "Error showing listings" : ""}
       </p>
       {userListings && userListings.length > 0 && (
-        <div className="flex flex-col gap-4">
+        <div
+          ref={listingsRef}
+          className="flex flex-col gap-4 p-3 rounded-lg bg-gray-200"
+        >
           <h1 className="text-center mt-7 text-2xl font-semibold">
             Your Listings
           </h1>
           {userListings.map((listing) => (
             <div
               key={listing._id}
-              className="border flex items-center rounded-lg p-3 justify-between gap-4"
+              className="border border-black flex items-center rounded-lg p-3 justify-between gap-4"
             >
               <Link to={`/listing/${listing._id}`}>
                 <img
                   src={listing.imageUrls[0]}
                   alt="Listing Cover"
-                  className="h-16 w-16 object-contain "
+                  className="h-16 w-16 object-contain"
                 />
               </Link>
 
@@ -277,7 +289,7 @@ export default function Profile() {
                 className="flex-1 text-slate-700 font-semibold hover:underline truncate"
                 to={`/listing/${listing._id}`}
               >
-                <p>{listing.name}</p>
+                <p className="truncate">{listing.name}</p>
               </Link>
 
               <div className="flex flex-col items-center">
